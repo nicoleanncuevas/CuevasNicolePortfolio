@@ -1,0 +1,618 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Nicole Ann D. Cuevas - Web Developer">
+        <meta name="keywords" content="Nicole Ann D. Cuevas, Software Developer, Web Developer, PHP Developer, Portfolio, Web Development, Santa Rosa Laguna">
+        <meta name="author" content="Nicole Ann D. Cuevas">
+        <meta property="og:title" content="Nicole Ann D. Cuevas | Web Developer">
+        <meta property="og:description" content="Portfolio of Nicole Ann D. Cuevas, Software Developer specializing in web development.">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="">
+        <meta name="robots" content="index, follow">
+        
+        <title>Nicole Ann Cuevas Web Developer in Santa Rosa, Laguna</title>
+        <link rel="canonical" href="" />
+        
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <link rel="stylesheet" href="Style/style-new.css">
+        
+        <!-- Structured data for better search engine understanding -->
+        <script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Nicole Ann D. Cuevas",
+        "jobTitle": "Web Developer",
+        "url": "[your-portfolio-url]",
+        "sameAs": [
+            "https://github.com/nicoleanncuevas"
+        ],
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Santa Rosa",
+            "addressRegion": "Laguna",
+            "addressCountry": "Philippines"
+        },
+        "email": "[your-email]"
+        }
+        </script>
+        
+    </head>
+    <body>
+        <!-- Navigation -->
+        <nav class="fixed w-full">
+            <div class="container mx-auto px-6 py-3 flex justify-center items-center">
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-link text-white-800 focus:outline-none focus:ring-0 active:outline-none" style="hover: color(--secondary);">Home</a>
+                    <a href="#about" class="nav-link text-white-800 focus:outline-none focus:ring-0 active:outline-none" style="hover: color(--secondary);">About</a>
+                    <a href="#skills" class="nav-link text-white-800 focus:outline-none focus:ring-0 active:outline-none" style="hover: color(--secondary);">Skills</a>
+                    <a href="#projects" class="nav-link text-white-800 focus:outline-none focus:ring-0 active:outline-none" style="hover: color(--secondary);">Projects</a>
+                    <a href="#certifications" class="nav-link text-white-800 focus:outline-none focus:ring-0 active:outline-none" style="hover: color(--secondary);">Certifications</a>
+                    <a href="#contact" class="nav-link text-white-800 focus:outline-none focus:ring-0 active:outline-none" style="hover: color(--secondary);">Contact</a>
+                </div>
+                <button id="menu-toggle" class="md:hidden focus:outline-none" aria-label="Toggle mobile menu" aria-expanded="false">
+                    <i id="menu-icon" class="fas fa-bars text-gray-800 text-xl hamburger" style="color: var(--primary);"></i>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="mobile-menu md:hidden" aria-hidden="true">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#certifications" class="nav-link">Certifications</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section id="home" class="min-h-screen flex items-center pt-16">
+            <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 ml-5">
+                     <h1 class="text-4xl md:text-6xl font-bold mb-4 text-pink-400 animate-type-reverse whitespace-nowrap overflow-hidden border-r-4 border-pink-300">
+                        Hi, I'm Nicole Ann Cuevas
+                    </h1>
+                    <h2 class="text-2xl md:text-3xl font-semibold mb-6">Software Developer</h2>
+                    <!-- <p class="text-gray-600 mb-8 max-w-md">
+                        Committed to creating efficient, scalable, and responsive web applications with PHP, MySQL, and modern web technologies.
+                    </p> -->
+                    <div class="flex space-x-4">
+                        <!-- <a href="#projects" class="bg-black text-white px-6 py-3 rounded-lg hover:bg-white hover:text-black hover:scale-105 transition-all duration-300 shadow-md">View My Work</a>
+                        <a href="#contact" class="border-2 border-black px-6 py-3 rounded-lg hover:bg-black hover:text-white hover:scale-105 transition-all duration-300 shadow-md">Contact Me</a> -->
+                        <button class="btn-primary" href="#projects">View My Work</button>
+                        <button class="btn-secondary" hre="#contact">Contact Me</button>
+                    </div>                
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="w-72 h-72 sm:w-80 sm:h-80 md:w-[28rem] md:h-[28rem] 
+                                bg-gray-200 rounded-full overflow-hidden border-4 border-[var(--secondary)] flex items-center justify-center">
+                        <img 
+                        src="images/profile.jpg" 
+                        alt="Nicole Ann Cuevas Profile" 
+                        class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12">About Me</h2>
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/3 mb-8 md:mb-0 flex justify-center">
+                        <div class="w-100 h-100 bg-gray-500 rounded-lg overflow-hidden border-2 border-[var(--secondary)] ">
+                            <img src="images/picof me.jpg" alt="Carlo Untalan Graduation Photo" width="250" height="250" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="md:w-2/3 md:pl-12">
+                        <h3 class="text-2xl font-semibold mb-4">BSIT Graduate & Web Developer</h3>
+                        <p class="text-gray-600 mb-6">
+                            Hi there! I’m a Bachelor of Science in Information Technology graduate who loves turning creative ideas into beautiful, functional websites. During my studies, I got hands-on experience with PHP, MySQL, HTML, CSS, JavaScript, and Bootstrap, building projects that challenged and inspired me. Right now, I’m diving into Tailwind CSS to explore modern frameworks that bring web experiences to life. I’m all about learning, growing, and crafting designs that make people smile. 🌸💻
+                        </p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-calendar-alt text-pink-300 mr-3"></i>
+                                <span class="text-gray-700"><strong>Age:</strong> 22</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-envelope text-pink-300 mr-3"></i>
+                                <span class="text-gray-700"><strong>Email:</strong> nicoleanndcuevas@gmail.com</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-phone-alt text-pink-300 mr-3"></i>
+                                <span class="text-gray-700"><strong>Phone:</strong> 09641661287</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-map-marker-alt text-pink-300 mr-3"></i>
+                                <span class="text-gray-700"><strong>Location:</strong> Santa Rosa, Laguna, PH</span>
+                            </div>
+                        </div>
+                        <div class="mt-8">
+                            <a href="Resume/Cuveas, Nicole Ann - resume.pdf" class="inline-block bg-[var(--primary)] text-white px-6 py-3 rounded-lg hover:bg-violet-400 transition" download="Resume/Cuveas, Nicole Ann - resume.pdf">
+                                <i class="fas fa-download mr-2"></i> Download Resume
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12">My Skills</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                    <!-- Technical Skills -->
+                    <div>
+                        <h3 class="text-xl font-semibold mb-6 border-b-2 border-blue-500 pb-2 inline-block">Technical Skills</h3>
+                        <div class="flex flex-wrap gap-4">
+                            <div class="skill-tag bg-yellow-600 text-white px-4 py-2 rounded-lg flex items-center">
+                                <i class="fab fa-html5 mr-2"></i>
+                                <span>HTML</span>
+                            </div>
+                            <div class="skill-tag bg-blue-400 text-white px-4 py-2 rounded-lg flex items-center">
+                                <i class="fab fa-css3-alt mr-2"></i>
+                                <span>CSS</span>
+                            </div>
+                            <div class="skill-tag bg-yellow-500 text-white px-4 py-2 rounded-lg flex items-center">
+                                <i class="fab fa-js mr-2"></i>
+                                <span>JavaScript</span>
+                            </div>
+                            <!-- <div class="skill-tag bg-purple-500 text-white px-4 py-2 rounded-lg flex items-center">
+                                <i class="fab fa-bootstrap mr-2"></i>
+                                <span>Bootstrap</span>
+                            </div> -->
+                            <div class="skill-tag bg-blue-500 text-white px-4 py-2 rounded-lg flex items-center">
+                                <i class="fab fa-php mr-2"></i>
+                                <span>PHP</span>
+                            </div>
+                            <div class="skill-tag bg-blue-600 text-white px-4 py-2 rounded-lg flex items-center">
+                                <i class="fas fa-database mr-2"></i>
+                                <span>MySQL</span>
+                            </div>
+                            <div class="skill-tag bg-purple-500 text-white px-4 py-2 rounded-lg flex items-center">
+                                <i class="fas fa-paint-brush mr-2"></i>
+                                <span>Canva</span>
+                            </div>
+                            <!-- <div class="skill-tag bg-gray-700 text-white px-4 py-2 rounded-lg flex items-center">
+                                <i class="fab fa-git-alt mr-2"></i>
+                                <span>Git</span>
+                            </div> -->
+                            <div class="skill-tag bg-gray-800 text-white px-4 py-2 rounded-lg flex items-center">
+                                <i class="fab fa-github-alt mr-2"></i>
+                                <span>Github</span>
+                            </div>
+                            <div class="skill-tag bg-[#F24E1E] text-white px-4 py-2 rounded-lg flex items-center">
+                                <i class="fab fa-figma text-white text-xl mr-2"></i>
+                                <span>Figma</span>
+                            </div>
+                            <div class="skill-tag bg-[#007ACC] text-white px-4 py-2 rounded-lg flex items-center">
+                                <i class="fas fa-code text-white text-lg mr-2"></i>
+                                <span>VS Code</span>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    <!-- Professional Skills -->
+                    <div>
+                        <h3 class="text-xl font-semibold mb-6 border-b-2 border-blue-500 pb-2 inline-block">Soft Skills</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <div class="bg-pink-400 p-2 rounded-full mr-4">
+                                    <i class="fas fa-lightbulb text-pink-100"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">Ability to Work Independently and Collaboratively</h4>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="bg-pink-400 p-2 rounded-full mr-4">
+                                    <i class="fas fa-users text-pink-100"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">Strong Communication Skills</h4>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="bg-pink-400 p-2 rounded-full mr-4">
+                                    <i class="fas fa-calendar-days text-pink-100"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">Leadership and Team Management</h4>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="bg-pink-400 p-2 rounded-full mr-4">
+                                    <i class="fas fa-tasks text-pink-100"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">Time Management and Organizational Skills</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Currently Learning -->
+                <!-- <div class="mt-12">
+                    <h3 class="text-xl font-semibold mb-6 border-b-2 border-blue-500 pb-2 inline-block">Currently Learning</h3>
+                    <div class="flex flex-wrap gap-4">
+                        <div class="bg-gray-100 px-4 py-2 rounded-full flex items-center border-2 border-blue-200">
+                            <i class="fas fa-wind text-blue-500 mr-2"></i>
+                            <span>Tailwind CSS</span>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12">Experiences</h2>
+                
+                <!-- Learning Roadmap Section -->
+                <div class="mb-16 bg-white p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-semibold mb-6 text-center">My Learning Roadmap</h3>
+                    
+                    <div class="relative">
+                        <!-- Timeline line -->
+                        <div class="absolute left-1/2 h-full w-1 bg-blue-200 transform -translate-x-1/2"></div>
+                        
+                        <!-- Roadmap Items -->
+                        <div class="space-y-8">
+                            <!-- College Foundations -->
+                            <div class="relative flex items-center">
+                                <div class="absolute left-1/2 -ml-3 w-6 h-6 bg-violet-600 rounded-full transform -translate-x-1/2"></div>
+                                <div class="w-1/2 pr-8 text-right">
+                                    <h4 class="font-bold text-lg">What I've Learned in College</h4>
+                                </div>
+                                <div class="w-1/2 pl-8">
+                                    <div class="bg-blue-50 p-4 rounded-lg">
+                                        <p class="text-sm text-gray-700">
+                                            <i class="fas fa-book-open text-violet-500 mr-1"></i> Java OOP concepts
+                                            <br>
+                                            <i class="fas fa-book-open text-violet-500 mr-1"></i> C# Event-Driven Programming
+                                            <br>
+                                            <i class="fas fa-book-open text-violet-500 mr-1"></i> Data Structures & Algorithms
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Current Focus -->
+                            <div class="relative flex items-center">
+                                <div class="absolute left-1/2 -ml-3 w-6 h-6 bg-violet-500 rounded-full transform -translate-x-1/2"></div>
+                                <div class="w-1/2 pr-8 text-right">
+                                    <h4 class="font-bold text-lg">Current Focus</h4>
+                                </div>
+                                <div class="w-1/2 pl-8">
+                                    <div class="bg-blue-50 p-4 rounded-lg">
+                                        <p class="text-sm text-gray-700">
+                                            <i class="fas fa-check-circle text-violet-500 mr-1"></i> Looking for Career
+                                            <br>
+                                            <i class="fas fa-check-circle text-violet-500 mr-1"></i> Continous Learning on Technologies
+                                            <br>
+                                            <i class="fas fa-check-circle text-violet-500 mr-1"></i> Web Development Basics
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Next Steps -->
+                            <div class="relative flex items-center">
+                                <div class="absolute left-1/2 -ml-3 w-6 h-6 bg-violet-400 rounded-full transform -translate-x-1/2"></div>
+                                <div class="w-1/2 pr-8 text-right">
+                                    <div class="bg-blue-50 p-4 rounded-lg">
+                                        <p class="text-sm text-gray-700">
+                                            <i class="fas fa-pen text-violet-500 mr-1"></i> Learning Front-end Frameworks
+                                            <br>
+                                            <i class="fas fa-pen text-violet-500 mr-1"></i> Advanced JavaScript Concepts
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="w-1/2 pl-8">
+                                    <h4 class="font-bold text-lg">Next Steps</h4>
+                                    <p class="text-gray-600">Expanding to frameworks</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Future Goals -->
+                            <div class="relative flex items-center">
+                                <div class="absolute left-1/2 -ml-3 w-6 h-6 bg-violet-300 rounded-full transform -translate-x-1/2"></div>
+                                <div class="w-1/2 pr-8 text-right">
+                                    <h4 class="font-bold text-lg">Future Goals</h4>
+                                </div>
+                                <div class="w-1/2 pl-8">
+                                    <div class="bg-blue-50 p-4 rounded-lg">
+                                        <p class="text-sm text-gray-700">
+                                            <i class="fas fa-brain text-violet-500 mr-1"></i> Senior Website Developer
+                                            <br>
+                                            <i class="fas fa-brain text-violet-500 mr-1"></i> UI/UX Designer
+                                            <br>
+                                            <i class="fas fa-brain text-violet-500 mr-1"></i> Front-end Developer
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Projects Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Project 1 -->
+                    <article class="card">
+                        <div class="h-48 bg-gray-300 flex items-center justify-center">
+                            <img src="images/g&b.png" alt="Online Lending Platform by Carlo Untalan" width="400" height="192" loading="lazy">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Online Lending Platform</h3>
+                            <h5 class="text-sm font-semibold mb-2 text-gray-700">Capstone Project</h5>
+                            <p class="text-gray-600 mb-4">
+                               Developed a full-featured online lending platform built with Wordpress and customized php, javascript, and css codes.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">PHP</span>
+                                <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Wordpress</span>
+                                <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Elementor</span>
+                                <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">JavaScript</span>
+                                <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">CSS</span>
+                            </div>
+                            <!-- <div class="flex space-x-3">
+                                <a href="404.html" class="text-blue-500 hover:text-blue-700">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                            </div> -->
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <div class="h-48 bg-gray-300 flex items-center justify-center">
+                            <img src="images/ebi front-end.png" alt="E-Commerce Website by Carlo Untalan" width="400" height="192" loading="lazy">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">EBI's Website Layout</h3>
+                            <h5 class="text-sm font-semibold mb-2 text-gray-700">Internship Experience</h5>
+                            <p class="text-gray-600 mb-4">
+                               Designed and enhanced EBI’s website layout with a focus on creating a modern, responsive, and visually appealing user interface for an improved front-end experience.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">CSS</span>
+                                <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Bootstrap</span>
+                                <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">HTML</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <div class="h-48 bg-gray-300 flex items-center justify-center">
+                            <img src="images/hris-eval.png" alt="Custom Admin Panel by Carlo Untalan" width="400" height="192" loading="lazy">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Standpro's Website Layout</h3>
+                            <h5 class="text-sm font-semibold mb-2 text-gray-700">Internship Experience</h5>
+                            <p class="text-gray-600 mb-4">
+                                Revamped StandPro’s hero layout and added an interactive carousel feature to make the site visually captivating and user-friendly.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">HTML</span>
+                                <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">CSS</span>
+                                <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Bootstrap</span>
+                                <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">JavaScript</span>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12">My Certifications</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <!-- Certification 1 -->
+                    <article class="certificate-card bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition transform hover:-translate-y-1">
+                        <div class="h-64 bg-gray-100 flex items-center justify-center p-4">
+                            <img src="images/Java-Foundations-Certificate_page-0001.jpg" alt="Java Foundations Certificate" width="300" height="256" loading="lazy">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Java Foundations</h3>
+                            <p class="text-gray-600 mb-4">
+                                Issued by: STI College - June 2022
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Certification 2 -->
+                    <article class="certificate-card bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition transform hover:-translate-y-1">
+                        <div class="h-64 bg-gray-100 flex items-center justify-center p-4">
+                            <img src="images/System-Administration-Certificate_page-0001.jpg" alt="System Administration Certificate" width="300" height="256" loading="lazy">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">System Administration</h3>
+                            <p class="text-gray-600 mb-4">
+                                Issued by: STI College - June 2022
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Certification 3 -->
+                    <article class="certificate-card bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition transform hover:-translate-y-1">
+                        <div class="h-64 bg-gray-100 flex items-center justify-center p-4">
+                            <img src="images/Introduction-to-CSS-Certificate_page-0001.jpg" alt="Introduction to CSS Certificate" width="300" height="256" loading="lazy">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Introduction to CSS</h3>
+                            <p class="text-gray-600 mb-4">
+                                Issued by: Simplilearn - February 2025
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Certification 4 -->
+                    <article class="certificate-card bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition transform hover:-translate-y-1">
+                        <div class="h-64 bg-gray-100 flex items-center justify-center p-4">
+                            <img src="images/Introduction-to-PHP-Certification_page-0001.jpg" alt="Introduction to PHP Certificate" width="300" height="256" loading="lazy">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Introduction to PHP</h3>
+                            <p class="text-gray-600 mb-4">
+                                Issued by: Simplilearn - February 2025
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Certification 5 -->
+                    <article class="certificate-card bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition transform hover:-translate-y-1">
+                        <div class="h-64 bg-gray-100 flex items-center justify-center p-4">
+                            <img src="images/Dean's -Lister-Certificate_page-0001.jpg" alt="Dean's List Certificate" width="300" height="256" loading="lazy">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Dean's List Certificate</h3>
+                            <p class="text-gray-600 mb-4">
+                                Issued by: STI College - 2023-2025
+                            </p>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12">Get In Touch</h2>
+                
+                <div class="flex flex-col md:flex-row gap-8">
+                    <div class="md:w-1/2">
+                        <h3 class="text-xl font-semibold mb-4">Contact Information</h3>
+                        <p class="text-gray-600 mb-6">
+                            Feel free to reach out to me for any questions or opportunities. I'll get back to you as soon as possible.
+                        </p>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="bg-violet-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-map-marker-alt text-violet-500"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">Location</h4>
+                                    <p class="text-gray-600">Santa Rosa, Laguna, Philippines</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-violet-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-envelope text-violet-500"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">Email</h4>
+                                    <p class="text-gray-600">nicoleanndvuevas@gmail.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-violet-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-phone-alt text-violet-500"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">Phone</h4>
+                                    <p class="text-gray-600">+63 964-1661-287</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8">
+                            <h4 class="font-semibold mb-4">Follow Me</h4>
+                            <div class="flex space-x-4">
+                                <a href="https://github.com/nicoleanncuevas" target="_blank" rel="noopener noreferrer" class="bg-gray-100 p-3 rounded-full hover:bg-violet-100 transition" aria-label="GitHub Profile">
+                                    <i class="fab fa-github text-gray-700 hover:text-violet-500"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/nicole-ann-cuevas-43999b346/" target="_blank" rel="noopener noreferrer" class="bg-gray-100 p-3 rounded-full hover:bg-violet-100 transition" aria-label="LinkedIn Profile">
+                                    <i class="fab fa-linkedin-in text-gray-700 hover:text-violet-500"></i>
+                                </a>
+                                <a href="https://www.facebook.com/nclnncvs" target="_blank" rel="noopener noreferrer" class="bg-gray-100 p-3 rounded-full hover:bg-violet-100 transition" aria-label="Facebook Profile">
+                                    <i class="fab fa-facebook-f text-gray-700 hover:text-violet-500"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="md:w-1/2">
+                        <form action="https://formspree.io/f/xkgbelgb" method="POST" class="space-y-4">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <label for="name" class="block text-gray-700 mb-2">Your Name</label>
+                                <input type="text" name="name" id="name" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--secondary)]">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-gray-700 mb-2">Your Email</label>
+                                <input type="email" name="email" id="email" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--secondary)]">
+                            </div>
+                            </div>
+                            <div>
+                            <label for="subject" class="block text-gray-700 mb-2">Subject</label>
+                            <input type="text" name="subject" id="subject" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--secondary)]">
+                            </div>
+                            <div>
+                            <label for="message" class="block text-gray-700 mb-2">Message</label>
+                            <textarea name="message" id="message" rows="5" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--secondary)]"></textarea>
+                            </div>
+                            <button type="submit" class="bg-[var(--primary)] text-white px-6 py-3 rounded-lg hover:bg-violet-400 transition w-full md:w-auto">
+                            Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- Footer -->
+        <footer class="py-8">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="mb-4 md:mb-0 text-center md:text-left">
+                        <h3 class="text-xl font-semibold mb-2">Nicole Ann Cuevas</h3>
+                        <p class="text-gray-400">Web Developer</p>
+                    </div>
+                    
+                    <div class="flex space-x-6 mb-4 md:mb-0 mt-5">
+                        <p>
+                            "I can do all things through Christ who strengthens me." — Philippians 4:13
+                        </p>
+                    </div>
+                    
+                    <!-- <div class="text-center md:text-right">
+                        <p class="text-gray-400">&copy; <span id="current-year"></span> Carlo Untalan. All rights reserved.</p>
+                        <p class="text-gray-500 text-sm mt-1">Built with Tailwind CSS</p>
+                    </div> -->
+                </div>
+            </div>
+
+            <!-- Scroll to Top Button -->
+            <button id="scroll-to-top" class="fixed bottom-14 right-6 bg-pink-500 text-white p-3 rounded-full shadow-lg hover:bg-pink-600 transition opacity-0 invisible focus:outline-none focus:ring-2 focus:ring-pink-300" aria-label="Scroll to top">
+                <i class="fas fa-arrow-up"></i>
+            </button>
+        </footer>
+
+        <script src="Scripts/scrollbutton.js"></script>
+        <script src="Scripts/carousel.js"></script>
+        <script src="Scripts/script.js"></script>
+    </body>
+    </html>
